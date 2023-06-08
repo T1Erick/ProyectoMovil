@@ -131,21 +131,36 @@ class _LoginPageState extends State<LoginPage> {
                               borderRadius: BorderRadius.circular(20.0))),
                     ),
                     Divider(
-                      height: 20.0,
+                          height: 20.0,
+                        ),
+                     SizedBox(
+                        width:130.0,
+                        height:30.0,
+                        child: ElevatedButton(
+                   onPressed:(){
+                         Navigator.pushNamed(context, '/Servicios');},
+                         child: Text("Ingresar"),
+                        ),
+
+                  ),
+                    Row(
+                      children: [
+                        Divider(
+                          height: 20.0,
+                        ),
+                        SizedBox(
+                        width:130.0,
+                        height:30.0,
+                        child: ElevatedButton.icon(
+                   onPressed:(){
+                         Navigator.popAndPushNamed(context, '/Home');},
+                         icon: Icon(Icons.arrow_back ),
+                         label: Text("Regresar"),
+                        ),
+
+                  ),
+                      ],
                     ),
-                    ElevatedButton(
-                     onPressed:(){
-                       Navigator.pushNamed(context, '/Servicios');},
-                       child:Text ('Ingresar '),
-                      ),
-                      Divider(
-                      height: 20.0,
-                    ),
-                      ElevatedButton(
-                     onPressed:(){
-                       Navigator.pushNamed(context, '/Register');},
-                       child:Text ('No tienes cuenta '),
-                      ),
                         
                   ],
                 ),

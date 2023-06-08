@@ -137,19 +137,33 @@ class _HomePagesState extends State<HomePages> {
             Divider(
                     height: 20.0,
                   ),
-            ElevatedButton(
+                  SizedBox(
+                    width:130.0,
+                    height:30.0,
+                    child: ElevatedButton(
                    onPressed:(){
                      Navigator.pushNamed(context, '/Login');},
-                     child:Text ('Ingresar '),
+                     
+                     child: Text("Ingresar"),
                     ),
+
+                  ),
+      
                     Divider(
                       height: 20.0,
                     ),
-                    ElevatedButton(
-                     onPressed:(){
-                       Navigator.pushNamed(context, '/Register');},
-                       child:Text ('No tienes cuenta '),
-                      ),
+
+                    SizedBox(
+                    width:130.0,
+                    height:30.0,
+                    child: ElevatedButton(
+                   onPressed:(){
+                     Navigator.pushNamed(context, '/Register');},
+                     child: Text("Registrarte"),
+                    ),
+
+                  ),
+                    
           ],
         ),
       ),
