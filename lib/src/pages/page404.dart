@@ -12,7 +12,7 @@ class _Page404State extends State<Page404> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:const Text ('No Encontrada')
+        title:const Text ('No se encontro')
       ),
     );
   }

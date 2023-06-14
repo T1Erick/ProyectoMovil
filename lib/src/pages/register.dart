@@ -116,7 +116,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 keyboardType: TextInputType.number,
               ),
               SizedBox(height: 16.0),
-              ElevatedButton(
+              SizedBox(
+                 width:130.0,
+                 height:30.0,
+                child: ElevatedButton(
                 onPressed: () {
                   
                   String name = _nameController.text;
@@ -140,6 +143,26 @@ class _RegisterPageState extends State<RegisterPage> {
                 },
                 child: Text('Registrarse'),
               ),
+              ),
+              
+              Row(
+                      children: [
+                        Divider(
+                          height: 20.0,
+                        ),
+                        SizedBox(
+                        width:130.0,
+                        height:30.0,
+                        child: ElevatedButton.icon(
+                   onPressed:(){
+                         Navigator.popAndPushNamed(context, '/Home');},
+                         icon: Icon(Icons.arrow_back ),
+                         label: Text("Regresar"),
+                        ),
+
+                  ),
+                      ],
+                    ),
             ],
           ),
               ),

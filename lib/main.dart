@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:rutas/src/pages/errorpage.dart';
 import 'package:rutas/src/pages/homepage.dart';
 import 'package:rutas/src/pages/login.dart';
+import 'package:rutas/src/pages/navbar.dart';
+import 'package:rutas/src/pages/notification.dart';
 import 'package:rutas/src/pages/otrapagina.dart';
 import 'package:rutas/src/pages/page404.dart';
+import 'package:rutas/src/pages/perfilpage.dart';
 import 'package:rutas/src/pages/register.dart';
 import 'package:rutas/src/pages/servicios.dart';
+import 'package:rutas/src/pages/upload.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,6 +22,11 @@ class MyApp extends StatelessWidget {
     '/Register':(context) => RegisterPage(),
     '/Otra':(context) => OtraPage(),
     '/Servicios':(context) => ServiciosPages(),
+    '/Perfil':(context) => PerfilPage(),
+    '/Error':(context) => ErrorPage(),
+    '/Imagenes':(context) => ImagePage(),
+    '/Notificaciones':(context) => NotificationPage(),
+    
   };
 
   @override
